@@ -4,7 +4,7 @@ FROM n8nio/n8n:latest
 USER root
 
 # 可選：安裝你要用的系統工具
- RUN apt-get update && apt-get install -y ffmpeg vim && rm -rf /var/lib/apt/lists/*
+  #RUN apt-get update && apt-get install -y ffmpeg vim && rm -rf /var/lib/apt/lists
 
 # 建立可寫資料夾
 RUN mkdir -p /data && chmod -R 777 /data
